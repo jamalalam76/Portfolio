@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Register — Portfolio</title>
+<link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="auth-page">
+<div class="auth-card reveal">
+  <h1>Create account</h1>
+  <form id="registerForm">
+    <input type="text" name="username" placeholder="Username" required minlength="3"/>
+    <input type="email" name="email" placeholder="Email" required/>
+    <input type="password" name="password" placeholder="Password (min 6)" required minlength="6"/>
+    <button type="submit" class="btn-primary">Register</button>
+  </form>
+  <p class="form-msg" id="msg"></p>
+  <p class="muted">Already have an account? <a href="/login.html">Login</a></p>
+  <p><a href="/">← Back to portfolio</a></p>
+</div>
+<script src="/js/auth.js"></script>
+</body>
+</html>

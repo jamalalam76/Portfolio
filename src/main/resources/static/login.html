@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Login — Portfolio</title>
+<link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="auth-page">
+<div class="auth-card reveal">
+  <h1>Welcome back</h1>
+  <p class="muted">Login to chat with the AI assistant.</p>
+  <form id="loginForm">
+    <input type="text" name="username" placeholder="Username" required/>
+    <input type="password" name="password" placeholder="Password" required/>
+    <button type="submit" class="btn-primary">Login</button>
+  </form>
+  <p class="form-msg" id="msg"></p>
+  <p class="muted">No account? <a href="/register.html">Register</a></p>
+  <p><a href="/">← Back to portfolio</a></p>
+</div>
+<script src="/js/auth.js"></script>
+</body>
+</html>

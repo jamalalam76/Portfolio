@@ -95,16 +95,28 @@ Edit `src/main/resources/static/index.html` and replace:
 
 Also update `portfolio.owner.*` in `application.properties` so the AI knows about you.
 
-## 🌐 Deploy
+## 🌐 Deploy Guide
 
-Build a JAR:
+### Option 1: Render (Recommended - Free)
+1. Push code to GitHub.
+2. Go to [Render Dashboard](https://dashboard.render.com/) -> **New Web Service**.
+3. Connect your GitHub repository.
+4. Select **Docker** environment (it automatically detects `Dockerfile`).
+5. Add Environment Variables in Render:
+   - `NVIDIA_API_KEY`: Your NVIDIA NIM API key
+   - `JWT_SECRET`: Random 32+ character string
+6. Click **Deploy Web Service**!
+
+### Option 2: Docker / Railway / AWS / Heroku
 ```bash
-mvn clean package
-java -jar target/portfolio-1.0.0.jar
-```
+# Build Docker image
+docker build -t portfolio-app .
 
-Deploy to Render, Railway, Heroku, AWS, or any Java host. Provide `NVIDIA_API_KEY` and MySQL credentials as environment variables.
+# Run container locally or in cloud
+docker run -p 8080:8080 -e NVIDIA_API_KEY="your_key" portfolio-app
+```
 
 ---
 
 Built with ❤️ using Spring Boot & NVIDIA AI.
+

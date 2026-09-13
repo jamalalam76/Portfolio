@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MD Jamal | Portfolio</title>
+<meta name="description" content="Portfolio of MD Jamal, B.Tech IT student and web developer."/>
+<link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="navbar">
+    <a href="#home" class="logo">MJ<span>.</span></a>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button id="themeToggle" class="icon-btn" title="Toggle theme">🌙</button>
+    <a href="/login.html" id="loginBtn" class="btn-ghost">Login</a>
+    <a href="#" id="logoutBtn" class="btn-ghost hidden">Logout</a>
+    <button id="menuToggle" class="icon-btn mobile-only">☰</button>
+  </div>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content reveal">
+    <p class="eyebrow">Hello, I'm</p>
+    <h1>MD Jamal</h1>
+    <h2 class="typing"><span id="typed"></span><span class="caret">|</span></h2>
+    <p class="lead">B.Tech IT student building responsive web applications with React.js, JavaScript, Java, and clean UI.</p>
+    <div class="cta-row">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-secondary">Contact Me</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">↓</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2 class="section-title reveal">About <span>Me</span></h2>
+  <div class="about-grid">
+    <div class="profile-photo reveal">
+      <img src="/images/profile.jpg" alt="Portfolio owner working on a laptop" />
+    </div>
+    <div class="about-card reveal">
+      <p>Motivated B.Tech CSE student with a strong foundation in <b>Java, DSA, OOP, and web development</b>. I build responsive applications using React.js, JavaScript, HTML, CSS, Tailwind CSS, and Firebase.</p>
+      <p>I enjoy solving problems, building polished user experiences, and contributing to growth-focused engineering teams.</p>
+      <ul class="info-list">
+        <li><b>Name:</b> MD Jamal</li>
+        <li><b>Email:</b> jamalalam652@gmail.com</li>
+        <li><b>Location:</b> Bhopal, Madhya Pradesh, India</li>
+        <li><b>Available:</b> Open to work</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+  <h2 class="section-title reveal">My <span>Skills</span></h2>
+  <div class="skills-grid">
+    <div class="skill reveal"><span>Java (Basic)</span><div class="bar"><i style="--w:55%"></i></div></div>
+    <div class="skill reveal"><span>C</span><div class="bar"><i style="--w:75%"></i></div></div>
+    <div class="skill reveal"><span>C++</span><div class="bar"><i style="--w:80%"></i></div></div>
+    <div class="skill reveal"><span>Data Structures &amp; Algorithms</span><div class="bar"><i style="--w:80%"></i></div></div>
+    <div class="skill reveal"><span>SQL / MySQL</span><div class="bar"><i style="--w:80%"></i></div></div>
+    <div class="skill reveal"><span>React.js</span><div class="bar"><i style="--w:85%"></i></div></div>
+    <div class="skill reveal"><span>HTML / CSS</span><div class="bar"><i style="--w:90%"></i></div></div>
+    <div class="skill reveal"><span>JavaScript</span><div class="bar"><i style="--w:80%"></i></div></div>
+    <div class="skill reveal"><span>Tailwind CSS</span><div class="bar"><i style="--w:80%"></i></div></div>
+    <div class="skill reveal"><span>Git / GitHub</span><div class="bar"><i style="--w:75%"></i></div></div>
+    <div class="skill reveal"><span>Firebase</span><div class="bar"><i style="--w:75%"></i></div></div>
+    <div class="skill reveal"><span>Power BI (Learning)</span><div class="bar"><i style="--w:45%"></i></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="section-title reveal">My <span>Projects</span></h2>
+  <div class="projects-grid">
+    <article class="project reveal">
+      <h3>JARVIS AI Virtual Assistant</h3>
+      <p>A customizable JARVIS-style AI assistant that speaks using the Web Speech API, generates intelligent responses with Gemini AI, and provides secure JWT-based user accounts.</p>
+      <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Gemini AI</span></div>
+      <a href="https://github.com/jamalalam76" target="_blank" rel="noopener" class="link">GitHub →</a>
+    </article>
+    <article class="project reveal">
+      <h3>ShopNest - E-commerce Platform</h3>
+      <p>A production-ready e-commerce platform with authentication, product catalog, cart, checkout, orders, payments, and an admin dashboard for products, users, inventory, and orders. Includes secure OTP email verification through the Brevo API and Render deployment.</p>
+      <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST API</span><span>Brevo API</span></div>
+      <a href="https://github.com/jamalalam76" target="_blank" rel="noopener" class="link">GitHub →</a>
+    </article>
+    <article class="project reveal">
+      <h3>ChatGPT Clone</h3>
+      <p>A responsive AI chatbot application with chat history, typing animation, markdown support, API error handling, and loading states for a smooth user experience.</p>
+      <div class="tags"><span>React.js</span><span>JavaScript</span><span>Tailwind CSS</span><span>OpenAI API</span></div>
+      <a href="https://github.com/jamalalam76" target="_blank" rel="noopener" class="link">GitHub →</a>
+    </article>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section alt">
+  <h2 class="section-title reveal">Education</h2>
+  <div class="timeline">
+    <div class="t-item reveal">
+      <h4>Bachelor of Technology in Information Technology</h4>
+      <p>Sagar Institute of Research &amp; Technology, Bhopal · 2023 – 2027</p>
+      <p>CGPA: 7.6/10</p>
+    </div>
+    <div class="t-item reveal">
+      <h4>Higher Secondary School, BSEB</h4>
+      <p>Class XII (Science) · Bihar, India · 2021 – 2023 · 73.8%</p>
+    </div>
+    <div class="t-item reveal">
+      <h4>High Secondary School, BSEB</h4>
+      <p>Class X · Bihar, India · 2019 – 2021 · 72.8%</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <h2 class="section-title reveal">Achievements</h2>
+  <div class="timeline">
+    <div class="t-item reveal">
+      <h4>Smart India Hackathon (SIH) 2026 - College Level Participant</h4>
+      <p>SIRT · 2026</p>
+      <p>Collaborated in a team to develop and present a solution for the given problem statement. Used React.js, JavaScript, and Firebase to build the project prototype.</p>
+    </div>
+    <div class="t-item reveal">
+      <h4>Quiz Competition - First Prize</h4>
+      <p>College-level competition</p>
+      <p>Won first prize by demonstrating strong knowledge, quick thinking, and effective teamwork.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section alt">
+  <h2 class="section-title reveal">Certifications</h2>
+  <ul class="certs">
+    <li class="reveal">✔ Data Structures &amp; Algorithms — Apna College</li>
+    <li class="reveal">✔ Generative AI Powered Data Visualization Simulations</li>
+    <li class="reveal">✔ Smart India Hackathon 2026 — Participant</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2 class="section-title reveal">Get in <span>Touch</span></h2>
+  <div class="contact-grid">
+    <div class="reveal">
+      <p>📧 <a href="mailto:jamalalam652@gmail.com">jamalalam652@gmail.com</a></p>
+      <p>☎ +91 7494043968</p>
+      <p>🔗 <a href="https://www.linkedin.com/in/md-jamal-21515a294" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/jamalalam76" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+    <form id="contactForm" class="reveal">
+      <input type="text" name="name" placeholder="Your name" autocomplete="name" required/>
+      <input type="email" name="email" placeholder="Your email" autocomplete="email" required/>
+      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+      <p id="contactMsg" class="form-msg"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> MD Jamal · Built with Spring Boot + NVIDIA AI</p>
+  <nav>
+    <a href="#home">Home</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+</footer>
+
+<!-- AI CHAT WIDGET -->
+<button id="aiToggle" class="ai-fab" title="Ask AI">🤖</button>
+<div id="aiPanel" class="ai-panel hidden">
+  <div class="ai-head">
+    <span>AI Assistant <small>· NVIDIA</small></span>
+    <button id="aiClose">✕</button>
+  </div>
+  <div id="aiBody" class="ai-body">
+    <div class="ai-msg bot">Hi! Ask me about MD Jamal, projects, skills, or web development.</div>
+  </div>
+  <form id="aiForm" class="ai-form">
+    <input id="aiInput" placeholder="Type a message..." autocomplete="off"/>
+    <button type="submit">➤</button>
+  </form>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

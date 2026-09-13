@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: portfolio-springboot
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: NVIDIA_API_KEY
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true

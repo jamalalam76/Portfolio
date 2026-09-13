@@ -1,0 +1,6 @@
+target/
+.git/
+.gitignore
+.tools/
+*.ps1
+README.md

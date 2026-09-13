@@ -4,7 +4,9 @@
   "description": "Personal Portfolio with AI Assistant (NVIDIA NIM)",
   "scripts": {
     "build": "bash build.sh",
-    "start": "bash start.sh"
+    "start": "bash start.sh",
+    "preview": "bash start.sh",
+    "serve": "bash start.sh"
   },
   "engines": {
     "node": ">=18.0.0"

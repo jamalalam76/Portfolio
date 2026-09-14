@@ -14,4 +14,4 @@ else
 fi
 
 echo "Starting Spring Boot Application using $JAR_PATH..."
-exec java -Dserver.port=${PORT:-8080} -jar "$JAR_PATH"
+exec java -Xms128m -Xmx384m -Dserver.port=${PORT:-8080} -Djava.security.egd=file:/dev/./urandom -jar "$JAR_PATH"

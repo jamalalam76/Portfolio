@@ -28,7 +28,7 @@ public class SecurityConfig {
             .authorizeHttpRequests(a -> a
                 .requestMatchers("/", "/index.html", "/login.html", "/register.html",
                         "/css/**", "/js/**", "/images/**", "/favicon.ico",
-                        "/api/auth/**", "/api/contact", "/api/ai/**",
+                        "/api/auth/**", "/api/contact", "/api/ai/**", "/health", "/api/health",
                         "/h2-console/**").permitAll()
                 .requestMatchers("/api/me/**").authenticated()
                 .anyRequest().permitAll()

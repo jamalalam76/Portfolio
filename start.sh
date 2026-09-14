@@ -13,5 +13,5 @@ else
     JAR_PATH=$(find . -name "portfolio-*.jar" | head -n 1)
 fi
 
-echo "Starting Spring Boot Application using $JAR_PATH..."
-exec java -Xms128m -Xmx384m -Dserver.port=${PORT:-8080} -Djava.security.egd=file:/dev/./urandom -jar "$JAR_PATH"
+echo "Starting Spring Boot Application on PORT ${PORT:-8080} using $JAR_PATH..."
+exec java -Xms128m -Xmx384m -Dserver.port=${PORT:-8080} -Dserver.address=0.0.0.0 -Djava.security.egd=file:/dev/./urandom -jar "$JAR_PATH"

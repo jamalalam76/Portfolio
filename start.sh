@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+set -e
 
 # Parse PORT from command line arguments (--port <num>) or environment variable $PORT
 TARGET_PORT="${PORT:-8080}"
 
-while [[ $# -gt 0 ]]; do
+while [ $# -gt 0 ]; do
   case "$1" in
     --port|-p)
       if [ -n "$2" ]; then
